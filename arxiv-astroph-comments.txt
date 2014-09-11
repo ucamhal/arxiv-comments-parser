@@ -1,0 +1,41 @@
+Blah this is my amazing article. Journal: blah; Something: whatever.
+
+
+Accepted for publication in Some Crazy: journal on date 21st June 192323.
+
+Journal
+Acceptance Date
+Funders
+
+Accepted for publication in Some Journal on 21st June 2010. Funded by: ABC, XYZ.
+
+Accepted for publication in Foo Journal on the 21st June 2010. Funded by: Abc, Def.
+Accepted for publication in the Journal of Whatever on the 21st June 2010. Funded by: Abc; Def.
+Submitted to Some Journal. Funded by: Abc; Def.
+
+
+Accepted by forms
+=================
+
+Accepted:
+	- to
+	- by
+	- for publication:
+		- in
+		- in
+		- on
+
+# probably won't support
+XXX accepted [for publication]
+	- e.g. A&A accepted
+
+Submitted for publication forms
+===============================
+ 
+# Potentially resubmitted, e.g. arXiv:1401.0662
+
+comments = sentence*
+sentence = journalSentence / funderSentence / otherSentence
+journalSentence = ("re"? "submitted" / "accepted") qualifier journal date?
+funderSentence = 
+otherSentence = 
